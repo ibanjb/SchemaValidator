@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: schemavalidator
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: schemavalidator
+    spec:
+      containers:
+      - name: schemavalidator
+        image: ciamproofacr.azurecr.io/schemavalidator:dev50
+        ports:
+        - containerPort: 80
+      imagePullSecrets:
+      - name: ciamproofacr
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: schemavalidator
+spec:
+  ports:
+  - port: 80
+  selector:
+    app: schemavalidator

@@ -1,0 +1,17 @@
+{   
+	
+    "$id": "http://ciam.nestle.com/schemas/profile.json#",
+	"title" : "profile",
+	"description": "Gigya profile subschema",
+    "type": "object",
+	"properties": {		
+		"email": {"$ref": "definitions.json#/definitions/email", "description": ""  },		
+		"firstName": {"type": "string", "maxLength":200,"description": "pce: LAST_NAME"  },		
+		"lastName": {"type": "string", "maxLength":200, "description": "pce: FISRT_NAME" },		
+		"gender": {"$ref": "definitions.json#/definitions/gender", "description": "pce: SEX - to be transformed 0 unknown, 1 male, 2 female" },		
+		"locale": {"type": "string", "maxLength":2, "description": ""  },		
+		"country": {"type": "string", "maxLength":2, "description": ""  },		
+		"city": {"type": "string", "maxLength":200, "description": "" },
+		"zip": {"$ref": "definitions.json#/definitions/zip", "description": "" }
+	}
+}   

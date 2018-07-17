@@ -1,0 +1,62 @@
+{
+  "name": "schema-validator",
+  "version": "2.0.0",
+  "description": "Schema validator",
+  "license": "UNLICENSED",
+  "main": "dist/server.js",
+  "engines": {
+    "node": ">=6"
+  },
+  "files": [
+    "bin/",
+    "dist/"
+  ],
+  "scripts": {
+    "build": "webpack",
+    "dist": "npm run build -s && node ./dist/server",
+    "start:dev": "nodemon --exec babel-node src/server.js",
+    "docs": "apidoc -e \"node_modules\"",
+    "test": "jest",
+    "coverage": "jest --collectCoverageFrom=src/**.js --collectCoverageFrom=!src/server.js --coverage",
+    "docker": "docker build -t schemavalidator:development ."
+  },
+  "keywords": [
+    "schema-validator"
+  ],
+  "dependencies": {
+    "ajv": "^6.5.0",
+    "express": "^4.16.3",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "styled-components": "^2.2.4",
+    "winston": "^2.4.2",
+    "webpack": "^3.8.1",
+    "webpack-node-externals": "^1.2.0",
+    "copy-webpack-plugin": "^4.5.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.0.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "coveralls": "^2.11.4",
+    "dependency-check": "^2.5.1",
+    "doctoc": "^0.15.0",
+    "eslint": "^3.8.1",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jest": "^21.17.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.8.0",
+    "jest": "^23.1.0",
+    "nyc": "^8.1.0",
+    "rimraf": "^2.4.2",
+    "superagent": "^3.8.3",
+    "supertest": "^3.1.0",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.2.2",
+    "watch": "^0.16.0"
+  }
+}

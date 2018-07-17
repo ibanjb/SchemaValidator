@@ -1,0 +1,16 @@
+{
+    "name": "schema-validator",
+    "version": "2.0.0",
+    "description": "Validates, using AJV, if the JSON schema received is valid using Gigya schemas",
+    "title": "schema-validator API",
+    "url" : "https://dsu-bitbucket.nestle.biz/scm/ciam/ciam_development/schemavalidator",
+    "header": {
+        "title": "Schema validator",
+        "filename": "readme.MD"
+    },
+    "template": {
+        "withCompare": false,
+        "withGenerator": false
+    },
+    "forceLanguage": "en"
+}

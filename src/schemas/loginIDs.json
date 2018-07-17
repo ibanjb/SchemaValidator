@@ -1,0 +1,16 @@
+{
+    
+    "$id": "http://ciam.nestle.com/schemas/loginIDs.json#", 
+	"title": "loginIDs",
+	"description" : "CIAM loginIDs schema",
+    "type": "object", 
+	"properties":{
+        "emails":{
+            "type":"array",
+            "minItems":1,
+			"items": {
+                "type": "string", "format":"email"
+            }
+        }
+    }
+}

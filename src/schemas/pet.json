@@ -1,0 +1,41 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "http://ciam.nestle.com/schemas/pet.json#",
+    "title": "pet",
+	"description": "data/pet subschema",
+	"type": "object",
+	"properties": {
+        "adoptionDate": {"type": "string","format": "date"},
+        "adoptionSource": {"type": "string", "maxLength":200,"description": "pce: ADOPTION_SOURCE"},
+        "applicationInternalIdentifier": {"type": "string", "maxLength":200,"description": "pce: APPLICATION_INTERNAL_IDENTIFIER"},
+		"birthDate": {"type": "string","format": "date"},
+        "birthDateReliability": {"$ref": "definitions.json#/definitions/birthDateReliability","description": "BIRTHDATE_RELIABILITY"},
+        "breed": {"type": "string", "maxLength":60,"description": "pce: BREED"},
+        "creationDate": {"type": "string", "format": "date-time"},
+        "dentalHealth": {"type": "boolean"},
+        "diggestiveSensitivity": {"type": "boolean"},
+        "hairballCare": {"type": "boolean"},
+        "indoorPet": {"type": "boolean"},
+        "isDeleted": {"type": "boolean"},
+        "kidneyHealth": {"type": "boolean"},
+        "lastUpdateDate": {"type": "string", "format": "date-time"},
+        "name": {"type": "string", "maxLength":200,"description": "pce: NAME"},
+        "neutered": {"type": "boolean"},
+        "overweight": {"type": "boolean"},
+        "petNutrition": {"$ref": "definitions.json#/definitions/petNutrition",  "description": "pce: PET_NUTRITION"},
+        "petSizeCode": {"$ref": "definitions.json#/definitions/petSizeCode",  "description": "pce: PET_SIZE_CODE"},
+        "petTypeCode": {"$ref": "definitions.json#/definitions/petTypeCode",  "description": "pce: PET_TYPE_CODE"},        
+        "pregnantNursing": {"type": "boolean"},
+        "senior": {"type": "boolean"},
+        "sex": {"type": "integer", "enum": [0,1,2]},
+        "skinSensitive": {"type": "boolean"},
+        "urinarySystemSensitivity": {"type": "boolean"},
+        "workingDog": {"type": "boolean"},
+        "young": {"type": "boolean"},
+        "interest":{
+			"type": "array", 
+			"items": {"$ref": "interest.json#"}
+		}		
+	},
+    "required": ["applicationInternalIdentifier, birthDate, birthDateReliability, breed, creationDate, dentalHealth, diggestiveSensitivity, hairballCare, indoorPet, lastUpdateDate, name, neutered, overweight, petNutrition, petSizeCode, petTypeCode, senior, sex, young"]
+}

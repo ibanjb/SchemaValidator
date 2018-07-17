@@ -1,0 +1,26 @@
+{ "accounts":
+	[{
+      "UID": "d67d177c-1a49-4cc0-bf38-e2a51cc7226a",
+      "created": "2013-10-24T04:35:35Z",
+      "lastUpdated": "2013-11-03T04:35:35Z",
+      "profile": {
+        "lastName": "Dionisetti",
+        "firstName": "Gal",
+        "email": "gal.dionisetti@example.com",
+        "gender": 1,
+        "city": "Créteil",
+        "zip": "94972 CEDEX 9",
+        "locale": "FR"
+      },
+      "data": {
+        "birthDate": "1933-03-03T05:26:52Z",
+        "birthDateReliability": 0,
+        "marketCode": 34000,
+        "consumerType": "B2C",
+        "phone": "33(942)233-7443",
+        "mobile": "62(733)105-6097",
+        "addressLine1": "00 Sloan Point"
+      }
+    
+    }]
+}

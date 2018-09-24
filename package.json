@@ -17,7 +17,7 @@
     "start:dev": "nodemon --exec babel-node src/server.js",
     "docs": "apidoc -e \"node_modules\"",
     "test": "jest",
-    "coverage": "jest --collectCoverageFrom=src/**.js --collectCoverageFrom=!src/server.js --coverage",
+    "coverage": "jest --collectCoverageFrom=src/**.js --collectCoverageFrom=!src/doc/** --coverage",
     "docker": "docker build -t schemavalidator:development ."
   },
   "keywords": [
@@ -25,22 +25,23 @@
   ],
   "dependencies": {
     "ajv": "^6.5.0",
-    "express": "^4.16.3",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "styled-components": "^2.2.4",
-    "winston": "^2.4.2",
-    "webpack": "^3.8.1",
-    "webpack-node-externals": "^1.2.0",
-    "copy-webpack-plugin": "^4.5.1"
-  },
-  "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-eslint": "^8.0.3",
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
+    "copy-webpack-plugin": "^4.5.1",
+    "express": "^4.16.3",
+    "properties-reader": "0.0.16",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "styled-components": "^2.2.4",
+    "webpack": "^3.8.1",
+    "webpack-node-externals": "^1.2.0",
+    "winston": "^2.4.2"
+  },
+  "devDependencies": {
     "coveralls": "^2.11.4",
     "dependency-check": "^2.5.1",
     "doctoc": "^0.15.0",

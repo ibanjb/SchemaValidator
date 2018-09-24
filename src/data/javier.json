@@ -1,0 +1,95 @@
+{"accounts": [ 
+    {
+        "UID": "d67d177c-1a49-4cc0-bf38-e2a51cc7226a",
+        "created":"0000-00-00T00:00:00.000Z",
+        "isRegistered": true,
+        "isVerified": true,
+        "profile": {
+            "email": "local-part@domain.rfc5322",
+            "firstName": "firstName-string",
+            "lastName": "lastName-string",
+            "gender": "U",
+            "locale": "AA",
+            "country": "AA",
+            "city": "city-string",
+            "zip": "zip-string"
+        },
+        "data":{
+            "consumerType": "PRIVATE",
+            "marketCode": 1,
+            "initialAppSourceCode": "iASC-string-max20",
+            "countryCode": "countryCode-string",
+            "child": [{
+                "applicationInternalIdentifier": "00000000-0000-0000-0000-00000000000",
+                "interest": [{
+                    "interestCode": "interestCode-max200",
+                    "answerDetails": "answerDetails-max200",
+                    "creationDate": "0000-00-00T00:00:00.000Z",
+                    "lastUpdateDate": "0000-00-00T00:00:00.000Z"
+                }]
+            }],
+            "pet": [{
+                "applicationInternalIdentifier": "00000000-0000-0000-0000-00000000000",
+                "birthDate": "0000-00-00",
+                "birthDateReliability": 1,
+                "breed": "breed",
+                "creationDate": "0000-00-00T00:00:00.000Z",
+                "dentalHealth": true,
+                "diggestiveSensitivity": true,
+                "hairballCare": true,
+                "indoorPet": true,
+                "lastUpdateDate": "0000-00-00T00:00:00.000Z",
+                "name": "name-max200",
+                "neutered": true,
+                "overweight": true,
+                "petNutrition": "UNKNOWN",
+                "petSizeCode": "TOY",
+                "petTypeCode": "DOG",
+                "senior": true,
+                "sex": 0,
+                "young": true,
+                "interest": [{
+                    "interestCode": "interestCode-max200",
+                    "answerDetails": "answerDetails-max200",
+                    "creationDate": "0000-00-00T00:00:00.000Z",
+                    "lastUpdateDate": "0000-00-00T00:00:00.000Z"
+                }]
+            }],
+            "interest": [{
+                "interestCode": "interestCode-max200",
+                "answerDetails": "answerDetails-max200",
+                "creationDate": "0000-00-00T00:00:00.000Z",
+                "lastUpdateDate": "0000-00-00T00:00:00.000Z"
+            }],
+            "externalIdentity": [{
+                "applicationCode": "applicationCode-max200",
+                "applicationInternalIdentifier": "applicationInternalIdentifier-max200",
+                "applicationInternalAlternateIdentifier": "applicationInternalAlternateIdentifier-max200",
+                "creationDate": "0000-00-00T00:00:00.000Z",
+                "lastUpdateDate": "0000-00-00T00:00:00.000Z"
+            }]
+        },
+        "identities": [{
+            "provider": "facebook",
+            "providerUID": "providerUID-string"
+        }],
+        "loginIDs":{
+            "emails":["local-part@domain.rfc5322"]
+        },
+        "password": {
+            "hashSettings": {"url": "https://tools.ietf.org/html/rfc3986", "algorithm": "custom", "salt":"salt-string"},
+            "hash":"hash-string"
+        },
+        "subscriptions": {
+            "AZaz09AA_AZaz09f2t20":{
+                "emails": {
+                    "isSubscribed": true,
+                    "lastUpdatedSubscriptionState": "0000-00-00T00:00:00.000Z",
+                    "tags": [
+                        "sourceApplication:.*", "acceptanceDetails:.*"
+                    ]               
+                }
+            }
+        }
+    }
+]}

@@ -1,0 +1,33 @@
+{
+  "accounts": [
+    {
+      "UID": "12345678-1234-1234-1234-123456789012",
+      "profile": {
+        "email": "local-part@domain.rfc5322"
+      },
+      "data": {
+        "consumerType": "PRIVATE",
+        "marketCode": "11111",
+        "initialAppSourceCode": "iASC-string-max20",
+        "child": [
+          {
+            "applicationInternalIdentifier": "d67d177c-1a49-4cc0-bf38-e2a51cc7226a",
+            "atopicRisk": "dolor ",
+            "birthDate": "1954-05-09",
+            "birthDateReliability": 0,
+            "creationDate": "1944-11-27T08:00:28.598Z",
+            "feeding": "est ea",
+            "firstName": "nisi adipisicing ad",
+            "initials": "ess",
+            "isDeleted": true,
+            "isWomanFirstPregnancy": false,
+            "lastUpdateDate": "1950-05-02T22:47:00.281Z",
+            "multipleBirth": 74297695,
+            "relationshipType": "sit",
+            "sex": 24649983
+          }
+        ]
+      }
+    }
+  ]
+}

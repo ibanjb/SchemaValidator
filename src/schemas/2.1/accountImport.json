@@ -1,0 +1,21 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "http://ciam.nestle.com/schemas/accountImport.json#", 
+	"title": "accountImport",
+	"description" : "CIAM account schema for Data Import",
+	"type": "object",
+    "properties": {
+		"UID": {"type": "string", "format": "uuid", "description": "pce: CONSUMER_ID"},
+		"created": {"type": "string", "format": "date-time", "description": "pce: CREATION_DATE"},
+		"isRegistered":{"type": "boolean" },
+		"isVerified":{"type": "boolean"},
+		"profile": {"$ref": "profile.json#"},
+		"data":{"$ref": "data.json#"},
+		"identities": {"$ref": "identities.json#"},
+		"loginIDs": {"$ref": "loginIDs.json#"},
+		"password": {"$ref": "password.json#"},
+		"subscriptions": {"$ref": "subscriptions.json#"}
+	},
+	"additionalProperties": false,
+	"required": ["UID", "profile", "data"]
+}

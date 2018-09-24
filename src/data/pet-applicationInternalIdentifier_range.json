@@ -1,0 +1,46 @@
+{
+  "accounts": [
+    {
+      "UID": "12345678-1234-1234-1234-123456789012",
+      "profile": {
+        "email": "local-part@domain.rfc5322"
+      },
+      "data": {
+        "consumerType": "PRIVATE",
+        "marketCode": "08005",
+        "initialAppSourceCode": "iASC-string-max20",
+        "pet": [
+          {
+            "applicationInternalIdentifier": "d67d177c-1a49-4cc0-bf38-e2a51cc7226a",
+            "birthDate": "1967-11-27",
+            "birthDateReliability": 1,
+            "breed": "fugiat dolor",
+            "creationDate": "0000-00-00T00:00:00.000Z",
+            "dentalHealth": true,
+            "diggestiveSensitivity": false,
+            "hairballCare": false,
+            "indoorPet": false,
+            "lastUpdateDate": "0000-00-00T00:00:00.000Z",
+            "name": "aute velit dolore esse minim",
+            "neutered": false,
+            "overweight": true,
+            "petNutrition": "WET",
+            "petSizeCode": "TOY",
+            "petTypeCode": "RODENT",
+            "senior": true,
+            "sex": 2,
+            "young": true,
+            "adoptionDate": "2003-12-31",
+            "adoptionSource": "ut elit laboris",
+            "isDeleted": true,
+            "kidneyHealth": false,
+            "pregnantNursing": true,
+            "skinSensitive": false,
+            "urinarySystemSensitivity": true,
+            "workingDog": true
+          }
+        ]
+      }
+    }
+  ]
+}

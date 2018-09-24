@@ -1,0 +1,16 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "http://ciam.nestle.com/schemas/externalIdentity.json#",
+    "title": "externalIdentity",
+	"description": "data/externalIdentity subschema",
+	"type": "object",
+	"properties": {
+        "applicationCode": {"type": "string", "maxLength":20,"description": "pce: APPLICATION_CODE"},
+        "applicationInternalIdentifier": {"type": "string", "maxLength":200,"description": "pce: APPLICATION_INTERNAL_IDENTIFIER"},
+        "applicationInternalAlternateIdentifier": {"type": "string", "maxLength":200,"description": "pce: APPLICATION_INTERNAL_ALTERNATE_IDENTIFIER"},
+        "creationDate": {"type": "string", "format": "date-time"},
+        "lastUpdateDate": {"type": "string", "format": "date-time"}
+    },
+    "additionalProperties": false,
+    "required": ["applicationCode", "applicationInternalIdentifier"]
+}

@@ -1,0 +1,79 @@
+{
+	"$id": "http://ciam.nestle.com/schemas/data.json#",
+    "title": "data",
+	"description": "CIAM subschema",
+	"type": "object",
+	"properties": {
+		"additionalName1": {"type": "string", "maxLength":200,"description": "pce: ADDITIONAL_NAME_1" },
+		"additionalName2": {"type": "string", "maxLength":200,"description": "pce: ADDITIONAL_NAME_2"},
+		"addressLine1": {"type": "string", "maxLength":200,"description": "pce: ADDRESS_LINE_1"},
+		"addressLine2": {"type": "string", "maxLength":200,"description": "pce: ADDRESS_LINE_2"},
+		"addressLine3": {"type": "string", "maxLength":200,"description": "pce: ADDRESS_LINE_3"},
+		"addressLine4": {"type": "string", "maxLength":200,"description": "pce: ADDRESS_LINE_4"},
+		"birthDate": {"$ref": "definitions.json#/definitions/date","description": "pce: BIRTHDATE" },
+		"birthDateReliability": {"$ref": "definitions.json#/definitions/birthDateReliability","description": "BIRTHDATE_RELIABILITY"},
+		"companyName": {"type": "string", "maxLength":200,"description": "pce: COMPANY_NAME"},
+		"consumerType": {"$ref": "definitions.json#/definitions/consumerType","description": "pce:CONSUMER_TYPE"},
+		"countryCode": {"$ref": "definitions.json#/definitions/countryCode","description": "pce:COUNTRY_CODE"},
+		"doNotContactAddress": {"type": "boolean","description": "pce:DO_NOT_CONTACT_ADDRESS"},
+		"doNotContactEmail": {"type": "boolean","description": "pce:DO_NOT_CONTACT_EMAIL"},
+		"doNotContactMobile": {"type": "boolean","description": "pce:DO_NOT_CONTACT_MOBILE"},
+		"doNotContactPhone": {"type": "boolean","description": "pce:DO_NOT_CONTACT_PHONE"},
+		"education": {"type": "string","maxLength":200,"description": "pce:EDUCATION"},
+		"householdAdultsCount": {"type": "integer","description": "pce:HOUSEHOLD_ADULTS_COUNT"},
+		"householdCatsCount": {"type": "integer","description": "pce:HOUSEHOLD_CATS_COUNT"},
+		"householdChildrenCount": {"type": "integer","description": "pce:HOUSEHOLD_CHILDREN_COUNT"},
+		"householdDogsCount": {"type": "integer","description": "pce:HOUSEHOLD_DOGS_COUNT"},
+		"householdOtherPetsCount": {"type": "integer","description": "pce:HOUSEHOLD_OTHER_PETS_COUNT"},
+		"householdOwnsCats": {"type": "boolean","description": "pce:HOUSEHOLD_OWNS_CATS"},
+		"householdOwnsDogs": {"type": "boolean","description": "pce:HOUSEHOLD_OWNS_DOGS"},
+		"householdOwnsPets": {"type": "boolean","description": "pce:HOUSEHOLD_OWNS_PETS"},
+		"householdResidentsCount": {"type": "integer","description": "pce:HOUSEHOLD_RESIDENTS_COUNT"},
+		"initialAppSourceCode": {"$ref": "definitions.json#/definitions/initialAppSourceCode",  "description": "pce: INITIAL_SOURCE_APP_CODE"},
+		"isContactDisallowed": {"type": "boolean", "description": "pce:IS_CONTACT_DISALLOWED"},
+		"isDeleted": {"type": "integer", "description": "pce:IS_DELETED"},
+		"isEmailValid": {"type": "boolean", "description": "pce:IS_EMAIL_VALID"},
+		"isMobileValid": {"type": "boolean", "description": "pce:IS_MOBILE_VALID"},
+		"isPhoneValid": {"type": "boolean", "description": "pce:IS_PHONE_VALID"},
+		"isPostalAddressValid": {"type": "boolean", "description": "pce:IS_POSTAL_ADDRESS_VALID"},
+		"isPrimary": {"type": "boolean", "description": "pce:IS_PRIMARY"},
+		"maritalStatus": {"type": "string", "maxLength":200,"description": "pce: MARITAL_STATUS"},
+		"marketCode": {"type": "string", "pattern":"^[0-9]{5,5}$", "description": "pce:MARKET_CODE"},
+		"mobile": {"type": "string", "maxLength":200,"description": "pce:MOBILE "},
+		"nutritionCookingFrequency": {"type": "string", "maxLength":200,"description": "pce: "},
+		"nutritionCookingLevel": {"type": "string", "maxLength":200,"description": "pce: "},
+		"nutritionSensitiveRisk": {"type": "boolean", "description": "pce:"},
+		"occupation": {"type": "string", "maxLength":200,"description": "pce: "},
+		"phone": {"type": "string", "maxLength":200,"description": "pce: "},
+		"region": {"type": "string", "maxLength":200,"description": "pce: "},
+		"salutation": {"type": "string", "maxLength":200,"description": "pce: "},
+		"title": {"type": "string", "maxLength":200,"description": "pce: "},
+		"preferedLanguageCode": {"type": "string", "maxLength":200,"description": "pce: PREFERRED_LANGUAGE_CODE "},		
+		"child":{
+			"type": "array", 
+			"items": {"$ref": "child.json#"}
+		},
+		"pet":{
+			"type": "array", 
+			"items": {"$ref": "pet.json#"}
+		},
+		"interest":{
+			"type": "array", 
+			"items": {"$ref": "interest.json#"}
+		},
+		"externalIdentity":{
+			"type": "array", 
+			"items": {"$ref": "externalIdentity.json#"}
+		},
+		"digitalAsset": {
+			"type": "array", 
+			"items": {"$ref": "digitalAsset.json#"}
+		},
+		"lastLogin": {"type": "string", "format": "date-time"},
+		"zipCodeExtension": {"type": "string", "maxLength":200,"description": "pce: ZIPCODE_EXTENSION"},
+		"creationDate": {"type": "string", "format": "date-time"},
+		"lastUpdateDate": {"type": "string", "format": "date-time"}
+	},
+	"additionalProperties": false,
+	"required": ["marketCode", "consumerType", "initialAppSourceCode"]
+}

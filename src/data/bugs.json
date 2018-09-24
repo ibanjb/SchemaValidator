@@ -1,0 +1,71 @@
+{ "accounts":
+	[{
+      "UID": "d67d177c-1a49-4cc0-bf38-e2a51cc7226a",
+      "loginIDs":{
+        "emails":["nhahuy1990@gmail.com"]},
+        "subscriptions":{
+          "AUnestlegrp_SBallmktprg":{
+            "email":{
+              "isSubscribed":false,
+              "tags":["sourceApplication: AUMILOAPP","acceptanceDetails: Milo Application"],
+              "lastUpdatedSubscriptionState":"2015-08-12T08:55:16Z"
+              }
+            },
+            "AUmilobrand_SBmilomktprg":{
+              "email":{
+                "isSubscribed":false,
+                "tags":["sourceApplication: AUMILOAPP","acceptanceDetails: Milo Application"],
+                "lastUpdatedSubscriptionState":"2015-08-12T08:55:16Z"
+                }
+              },
+              "AUmilobrand_RGchampsquad":{
+                "email":{
+                  "isSubscribed":false,
+                  "tags":["sourceApplication: AUMILOAPP","acceptanceDetails: Milo Application"],
+                  "lastUpdatedSubscriptionState":"2015-08-12T08:55:16Z"
+                  }
+                }
+              },
+              "profile":{
+                "firstName":"Nguyen",
+                "lastName":"Huy 2",
+                "address":"",
+                "city":"",
+                "gender":1,
+                "zip":"",
+                "email":"nhahuy1990@gmail.com"
+              },
+              "data":{
+                "countryCode":"AU",
+                "marketCode":20102,
+                "areaOfInterest":[],
+                "asset":[],
+                "child":[{
+                  "childID":"99fc23b41c60b1db1ce82b31e87e48b4","birthDate":"2011-05-16T00:00:00Z","birthDateReliability":0,"creationDate":"2017-05-16T06:49:36Z","firstName":"Bapp test 222","sex":1
+                },{
+                  "childID":"a8d8b252987604f2eb742956dbc43bec","birthDate":"2011-05-16T00:00:00Z","birthDateReliability":0,"creationDate":"2017-05-16T07:23:19Z","firstName":"b?p test","sex":1
+                }
+              ],
+              "externalApplication":[],
+              "addressLine1":"",
+              "addressLine2":"",
+              "addressLine3":"",
+              "addressLine4":"",
+              "customerType":"PRIVATE",
+              "initialAppSourceCode":"AUMILO_MIG",
+              "mobile":"+61123456788",
+              "phone":"",
+              "region":"",
+              "title":"",
+              "householdChildrenCount":8,
+              "householdCatsCount":0,
+              "householdDogsCount":0,
+              "pet":[]},
+              "password":{
+                "hash":"D\/YP16SbqUZpB+1ocbEfHw==",
+                "hashSettings":{
+                  "algorithm":"md5"
+                  }
+              }
+    }]
+}

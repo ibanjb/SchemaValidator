@@ -14,9 +14,9 @@ spec:
     spec:
       containers:
       - name: schemavalidator
-        image: ciamproofacr.azurecr.io/schemavalidator:development
+        image: proofacr.azurecr.io/schemavalidator:development
       imagePullSecrets:
-        - name: ciamproofacr
+        - name: proofacr
 ---
 apiVersion: v1
 kind: Service

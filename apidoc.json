@@ -1,9 +1,9 @@
 {
     "name": "schema-validator",
     "version": "2.0.0",
-    "description": "Validates, using AJV, if the JSON schema received is valid using Gigya schemas",
+    "description": "Validates, using AJV, if the JSON schema received is valid",
     "title": "schema-validator API",
-    "url" : "https://dsu-bitbucket.nestle.biz/scm/ciam/ciam_development/schemavalidator",
+    "url" : "https://github.com/ibanjb/SchemaValidator",
     "header": {
         "title": "Schema validator",
         "filename": "readme.MD"

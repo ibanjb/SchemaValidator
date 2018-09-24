@@ -1,0 +1,19 @@
+{
+	"$id": "http://ciam.nestle.com/schemas/definitions.json#",
+	"title": "definitions",  
+	"definitions": {
+		"email": {"$id": "#email", "type": "string", "format": "email" },
+		"gender": {"$id": "#gender", "enum": ["M","F","U"], "description": "pce: SEX - to be transformed 0 Unknown, 1 Male, 2 Female"},
+		"date": {"$id": "#date", "type": "string", "format": "date"},
+		"birthDateReliability": {"$id": "#birthDateReliability", "enum": [0,1,2,3,4]},
+		"provider": {"$id": "#provider", "enum": ["facebook", "googleplus", "google", "yahoo", "amazon", "instagram", "line", "twitter"]},
+		"consumerType": {"$id": "#consumerType", "enum": ["PRIVATE"]},				
+		"countryCode": {"$id": "#countryCode", "type": "string"},
+		"zip": {"$id": "#zip", "type": "string", "maxLength":200},
+		"initialAppSourceCode": {"$id": "#initialAppSourceCode", "maxLength":20,"type": "string", "description": "pce: INITIAL_SOURCE_APP_CODE"},
+		"marketCode": {"$id": "#marketCode", "type": "integer"},
+		"petNutrition": {"$id": "#petNutrition", "enum": ["UNKNOWN","WET","DRY","WET & DRY"], "description": "pce: PET_NUTRITION - Pet Type code :  'UNKNOWN', 'WET', 'DRY', 'WET & DRY'"},	
+		"petSizeCode": {"$id": "#petSizeCode", "enum": ["TOY","SMALL","MEDIUM","LARGE"], "description": "pce: PET_SIZE_CODE - Pet Type code :  'TOY', 'SMALL', 'MEDIUM', 'LARGE'"},	
+		"petTypeCode": {"$id": "#petTypeCode", "enum": ["DOG","CAT","RODENT","FISH","BIRD"], "description": "pce: PET_TYPE_CODE - Pet Type code : 'DOG', 'CAT', 'RODENT', 'FISH', 'BIRD'"}
+    }
+}
